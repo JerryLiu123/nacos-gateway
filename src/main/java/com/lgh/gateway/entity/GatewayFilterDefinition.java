@@ -3,12 +3,18 @@ package com.lgh.gateway.entity;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+/**
+ * 路由过滤器配置
+ * @author lizhiting
+ * @date 2020-05-14 14:56
+ */
 public class GatewayFilterDefinition {
 
-    //Filter Name
+    /**过滤器名称**/
     private String name;
-    //对应的路由规则
+    /**对应的规则**/
     private Map<String, String> args = new LinkedHashMap<>();
+
 	public String getName() {
 		return name;
 	}
